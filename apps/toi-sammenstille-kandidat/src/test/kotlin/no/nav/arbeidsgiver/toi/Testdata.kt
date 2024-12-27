@@ -84,7 +84,7 @@ fun oppfølgingsinformasjonMelding(aktørId: String) = """
             "@event_name": "oppfølgingsinformasjon",
             "oppfølgingsinformasjon": {
                 "fodselsnummer": "12345678912",
-                "formidlingsgruppe": "IARBS",
+                "formidlingsgruppe": "ARBS",
                 "iservFraDato": null,
                 "fornavn": "TULLETE",
                 "etternavn": "TABBE",

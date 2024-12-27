@@ -159,7 +159,7 @@ class SammenstillTest {
         assertThat(kunKandidatfelter(melding)).containsExactlyInAnyOrder("oppfølgingsinformasjon")
 
         val oppfølgingsinformasjonPåMelding = melding.get("oppfølgingsinformasjon")
-        assertThat(oppfølgingsinformasjonPåMelding.get("formidlingsgruppe").asText()).isEqualTo("IARBS")
+        assertThat(oppfølgingsinformasjonPåMelding.get("formidlingsgruppe").asText()).isEqualTo("ARBS")
         assertThat(oppfølgingsinformasjonPåMelding.get("iservFraDato").isNull).isTrue
         assertThat(oppfølgingsinformasjonPåMelding.get("fornavn").asText()).isEqualTo("TULLETE")
         assertThat(oppfølgingsinformasjonPåMelding.get("etternavn").asText()).isEqualTo("TABBE")

@@ -19,8 +19,7 @@ fun lagEvalueringsGrunnlag(kandidat: Kandidat): Evaluering =
         arenaIkkeFritattKandidatsøk = kandidat.arenaFritattKandidatsøk == null || !kandidat.arenaFritattKandidatsøk.erFritattKandidatsøk,
         erUnderOppfoelging = erUnderOppfølging(kandidat),
         harRiktigFormidlingsgruppe = kandidat.oppfølgingsinformasjon?.formidlingsgruppe in listOf(
-            Formidlingsgruppe.ARBS,
-            Formidlingsgruppe.IARBS
+            Formidlingsgruppe.ARBS
         ),
         erIkkeKode6eller7 = erIkkeKode6EllerKode7(kandidat),
         erIkkeSperretAnsatt = kandidat.oppfølgingsinformasjon?.sperretAnsatt == false,

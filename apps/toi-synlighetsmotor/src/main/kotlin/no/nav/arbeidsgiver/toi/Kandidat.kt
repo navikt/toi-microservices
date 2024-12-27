@@ -87,8 +87,7 @@ data class Oppfølgingsinformasjon(
 typealias Diskresjonskode = String
 
 enum class Formidlingsgruppe {
-    ARBS,
-    IARBS
+    ARBS
 }
 
 data class FritattKandidatsøk(

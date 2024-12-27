@@ -55,7 +55,7 @@ class OppfolgingsinformasjonTest {
 
         meldingJson.get("oppfølgingsinformasjon").apply {
             assertThat(get("fodselsnummer").asText()).isEqualTo(fødselsnummer)
-            assertThat(get("formidlingsgruppe").asText()).isEqualTo("IARBS")
+            assertThat(get("formidlingsgruppe").asText()).isEqualTo("ARBS")
             assertThat(get("iservFraDato").isNull).isTrue
             assertThat(get("fornavn").asText()).isEqualTo("TULLETE")
             assertThat(get("etternavn").asText()).isEqualTo("TABBE")
@@ -76,7 +76,7 @@ class OppfolgingsinformasjonTest {
     private fun oppfølgingsinformasjonMeldingFraEksterntTopic(fødselsnummer: String) = """
         {
             "fodselsnummer": "$fødselsnummer",
-            "formidlingsgruppe": "IARBS",
+            "formidlingsgruppe": "ARBS",
             "iservFraDato": null,
             "fornavn": "TULLETE",
             "etternavn": "TABBE",

@@ -107,6 +107,12 @@ class SynlighetsmotorTest {
     )
 
     @Test
+    fun `om Person har formidlingsgruppe IARBS skal synlighet være false`() = testProgramMedHendelse(
+        komplettHendelseSomFørerTilSynlighetTrue(oppfølgingsinformasjon = oppfølgingsinformasjon(formidlingsgruppe = "IARBS")),
+        enHendelseErPublisertMedSynlighetsverdiOgFerdigBeregnet(false, true)
+    )
+
+    @Test
     fun `om Person har feil formidlingsgruppe skal synlighet være false`() = testProgramMedHendelse(
         komplettHendelseSomFørerTilSynlighetTrue(oppfølgingsinformasjon = oppfølgingsinformasjon(formidlingsgruppe = "IKKEARBSELLERIARBS")),
         enHendelseErPublisertMedSynlighetsverdiOgFerdigBeregnet(false, true)
