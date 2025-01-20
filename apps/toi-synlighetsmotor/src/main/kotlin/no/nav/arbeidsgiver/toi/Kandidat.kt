@@ -15,6 +15,7 @@ data class Kandidat(
     val hjemmel: Hjemmel?,
     val måBehandleTidligereCv: MåBehandleTidligereCv?,
     val kvp: Kvp?,
+    val adressebeskyttelse: String?,
 ) {
     val erAAP: Boolean
         get() = oppfølgingsinformasjon?.erAAP == true
